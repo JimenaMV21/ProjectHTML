@@ -1,0 +1,150 @@
+body {
+    background-color: #F8C8DC;
+    color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-color: darksalmon;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.imagenes{
+    display:flex;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+
+.PieImagen{
+    background-color: darksalmon;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:30%;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+p {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    margin-right: 50px;
+    text-decoration: wavy;
+    color: darksalmon;
+}
+
+.contenido {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    margin-top: 5%; /* Espacio entre el título y el contenido */
+}
+
+.imagen {
+    width: 25%; /* Ajusta el tamaño de la imagen */
+    height: 45%; /* Mantén la proporción de la imagen */
+    border-radius: 3%; /* Opcional: bordes redondeados */
+}
+
+.texto {
+    font-size: 20px;
+    margin-left: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: orange;
+}
+
+.contenedor-imagenes {
+    display: grid; /* Alinea los elementos en fila */
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; /* Espacio entre las imágenes */
+    gap: 30px; /* Espacio entre las imágenes */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo para cada imagen con descripción */
+.imagen-con-descripcion {
+    text-align: center; /* Centra el texto debajo de la imagen */
+    width: 40%;
+}
+
+/* Estilo para las imágenes */
+.imagen-con-descripcion img {
+    width: 200%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la descripción */
+.descripcion {
+    background-color: darksalmon; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 4px;
+    margin-top: 10px;
+    margin-right: -80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

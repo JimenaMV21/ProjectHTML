@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Adopción</title>
+    <link rel="stylesheet" href="colores.css">
+    <link rel="shortcut icon" href="k_b-removebg-preview.png" type="image/x-icon">
+
+
+    <div class="Logo">
+        <img src="k_b-removebg-preview.png" alt="Logotipo de la página" width="300">
+    </div>
+    
+    <nav class="links">
+            <a href="PagPrin.html">Inicio🐾</a>
+            <a href="Programas.html">Programas🐾</a>
+            <a href="Formulario.html">Formulario🐾</a>
+            <a href="Candidatos.html">Candidatos🐾</a>
+    </nav>
+</header>
+
+<div class="titulo">
+    <h1>¿Tienes dudas?</h1>
+</div>
+
+<h2>
+    Mándanos un mensaje con tus dudas o con alguna información que te podamos proporcionar 🐾
+</h2>
+
+<br>
+<br>
+
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Formulario de Dudas</h1>
+
+        <!-- primer input  -->
+        
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+        
+        <!-- segundo input  -->
+        
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        
+        <!-- tercer input  -->
+        
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <!-- cuarto input  -->
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+
+        <!-- quinto input  -->
+        
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" placeholder="¡Cuéntanos!"></textarea>
+
+        <!-- boton -->
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+<footer>
+    <p>&copy; 2025 B&K. Todos los derechos reservados.</p>
+</footer>
+
+</html>
