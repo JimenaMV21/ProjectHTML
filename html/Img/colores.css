@@ -166,3 +166,25 @@ img2 {
     margin-top: 10px; /* Espacio entre la imagen y la descripción */
     font-size: 16px; /* Tamaño de la fuente de la descripción */
 }
+
+.info-empresa {
+    padding: 10px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    border-radius: 8px;
+    background-color: darksalmon;
+    width: 50%; /* Ancho del div */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info-empresa h2 {
+    margin: 0 0 10px; /* Margen inferior */
+    padding: 2%;
+}
+.info-empresa1 p {
+    margin: 5px 0; /* Margen superior e inferior */
+    margin-left: 250px; /* Margen izquierdo específico */
+}
+
+.direccion{
+    margin: 5px 0; /* Margen superior e inferior */
+    margin-left: 250px;
+}
