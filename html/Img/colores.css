@@ -56,10 +56,15 @@ p {
     align-items: center;
 }
 
-.links a{
+.links a {
     margin-right: 50px;
     text-decoration: wavy;
     color: darksalmon;
+    transition: color 0.3s ease; /* Añadir transición para el cambio de color */
+}
+
+.links a:hover {
+    color: rgb(94, 3, 3); /* Cambiar el color a rojo al pasar el cursor */
 }
 
 .contenido {
