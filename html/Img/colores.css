@@ -148,3 +148,16 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.imagen-container {
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+    text-align: center; /* Centrar el contenido */
+}
+img2 {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.descripcion2 {
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-size: 16px; /* Tamaño de la fuente de la descripción */
+}
