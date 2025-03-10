@@ -165,6 +165,7 @@ img2 {
 .descripcion2 {
     margin-top: 10px; /* Espacio entre la imagen y la descripción */
     font-size: 16px; /* Tamaño de la fuente de la descripción */
+    align-items: center;
 }
 
 .info-empresa {
