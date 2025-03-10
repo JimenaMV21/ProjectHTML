@@ -56,10 +56,15 @@ p {
     align-items: center;
 }
 
-.links a{
+.links a {
     margin-right: 50px;
     text-decoration: wavy;
     color: darksalmon;
+    transition: color 0.3s ease; /* Añadir transición para el cambio de color */
+}
+
+.links a:hover {
+    color: rgb(94, 3, 3); /* Cambiar el color a rojo al pasar el cursor */
 }
 
 .contenido {
@@ -147,4 +152,39 @@ button:hover {
     margin-right: -80%;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-container {
+    margin-bottom: 20px; /* Espacio entre las imágenes */
+    text-align: center; /* Centrar el contenido */
+}
+img2 {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.descripcion2 {
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-size: 16px; /* Tamaño de la fuente de la descripción */
+}
+
+.info-empresa {
+    padding: 10px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    border-radius: 8px;
+    background-color: darksalmon;
+    width: 50%; /* Ancho del div */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info-empresa h2 {
+    margin: 0 0 10px; /* Margen inferior */
+    padding: 2%;
+}
+.info-empresa1 p {
+    margin: 5px 0; /* Margen superior e inferior */
+    margin-left: 250px; /* Margen izquierdo específico */
+}
+
+.direccion{
+    margin: 5px 0; /* Margen superior e inferior */
+    margin-left: 250px;
 }

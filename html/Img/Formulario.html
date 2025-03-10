@@ -17,6 +17,7 @@
             <a href="Programas.html">Programas🐾</a>
             <a href="Formulario.html">Formulario🐾</a>
             <a href="Candidatos.html">Candidatos🐾</a>
+            <a href="Nosotros.html">Nosotros🐾</a>
     </nav>
 </header>
 
@@ -31,40 +32,98 @@
 <br>
 <br>
 
-</head>
 <body>
-    <form action="#" method="post">
+    <form id="formulario" action="#" method="post">
         <h1>Formulario de Dudas</h1>
 
-        <!-- primer input  -->
-        
         <label for="nombre">Nombre Completo:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
-        
-        <!-- segundo input  -->
-        
+
         <label for="correo">Correo Electrónico:</label>
         <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-        
-        <!-- tercer input  -->
-        
+
         <label for="telefono">Número de Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
-        <!-- cuarto input  -->
-        
         <label for="direccion">Dirección:</label>
         <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
 
-        <!-- quinto input  -->
-        
         <label for="descripcion">Descripción:</label>
         <textarea id="descripcion" name="descripcion" rows="4" placeholder="¡Cuéntanos!"></textarea>
 
-        <!-- boton -->
-        
         <button type="submit">Enviar</button>
     </form>
+
+    <script>
+        // Obtener el formulario
+        const form = document.getElementById('formulario');
+
+        // Agregar un evento de envío al formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Validar los campos
+            let isValid = true;
+
+            // Validar el campo de nombre
+            const nombreInput = document.getElementById('nombre');
+            if (nombreInput.value.trim() === '') {
+                isValid = false;
+                console.log("El campo 'Nombre Completo' es obligatorio."); // Mensaje en consola
+                nombreInput.classList.add('error');
+            } else {
+                nombreInput.classList.remove('error');
+            }
+
+            // Validar el campo de correo electrónico
+            const correoInput = document.getElementById('correo');
+            if (correoInput.value.trim() === '' || !isValidEmail(correoInput.value)) {
+                isValid = false;
+                console.log("El campo 'Correo Electrónico' es obligatorio y debe tener un formato válido."); // Mensaje en consola
+                correoInput.classList.add('error');
+            } else {
+                correoInput.classList.remove('error');
+            }
+
+            // Validar el campo de teléfono
+            const telefonoInput = document.getElementById('telefono');
+            if (telefonoInput.value.trim() === '' || !isValidPhone(telefonoInput.value)) {
+                isValid = false;
+                console.log("El campo 'Número de Teléfono' es obligatorio y debe seguir el formato 123-456-7890."); // Mensaje en consola
+                telefonoInput.classList.add('error');
+            } else {
+                telefonoInput.classList.remove('error');
+            }
+
+            // Validar el campo de dirección
+            const direccionInput = document.getElementById('direccion');
+            if (direccionInput.value.trim() === '') {
+                isValid = false;
+                console.log("El campo 'Dirección' es obligatorio."); // Mensaje en consola
+                direccionInput.classList.add('error');
+            } else {
+                direccionInput.classList.remove('error');
+            }
+
+            // Si todos los campos son válidos, puedes agregar lógica aquí si lo deseas
+            if (isValid) {
+                console.log("Todos los campos son válidos."); // Mensaje en consola
+            }
+        });
+
+        // Función para validar el formato de correo electrónico
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Función para validar el formato de número de teléfono
+        function isValidPhone(phone) {
+            const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+            return phoneRegex.test(phone);
+        }
+    </script>
+
 </body>
 
 <footer>
