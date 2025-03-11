@@ -6,6 +6,13 @@
     <title>B&K - Adopciones Responsables</title>
     <link rel="stylesheet" href="colores.css">
     <link rel="shortcut icon" href="k_b-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="animaciones.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+
     <style>
         .mapa-container {
             display: flex;
@@ -35,6 +42,14 @@
                 background-color: rgba(0, 0, 0, 0.8);
             }
     </style>
+
+    
+    <script>
+    $(document).ready(function(){
+      $(".slider").bxSlider();
+    });
+    </script>
+
 </head>
 <body>
     <header>
@@ -57,9 +72,19 @@
 
     <h2>¡Estás en el lugar correcto!</h2>
 
-    <div class="imagenes">
-        <img src="ima_1.jpg" alt="familia_perro">
+    <!-- Slider de Imágenes -->
+    <div class="slider-container">
+       <div class="slider">
+            <div class="slide"><img src="ima_12.jpeg" alt="Mascota 1"></div>
+            <div class="slide"><img src="ima_10.jpeg" alt="Mascota 2"></div>
+            <div class="slide"><img src="ima_12.jpeg" alt="Mascota 3"></div>
+            <div class="slide"><img src="ima_4.jpg" alt="Mascota 4"></div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </div>
+    </div>
+
 
     <div class="PieImagen">
         Miles de familias han sido felices gracias a nuestro programa "Adopta una patita" 🐾

@@ -1,0 +1,185 @@
+body {
+    background-color: #F8C8DC;
+    color: #000000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    background-color: darksalmon;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.imagenes{
+    display:flex;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+
+.PieImagen{
+    background-color: darksalmon;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:30%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: darksalmon;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: rgb(94, 3, 3);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.imagen {
+    width: 25%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.texto {
+    font-size: 20px;
+    margin-left: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* Ajustar el tamaño del contenedor del slider */
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar la alineación del slider */
+.slider {
+    display: flex;
+    width: 100%; /* Ajuste del ancho total para todas las imágenes */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Ajustar cada imagen del slider */
+.slide {
+    flex: 1 0 100%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción sin deformar */
+    max-height: 400px; /* Limita la altura para evitar que se agranden demasiado */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsionar */
+    border-radius: 10px;
+}
+
+
+.info-empresa {
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: darksalmon;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info-empresa h2 {
+    margin: 0 0 10px;
+    padding: 2%;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    width: 100%;
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.mapa-container iframe {
+    max-width: 100%; 
+    height: 450px; 
+    border-radius: 10px; 
+}
